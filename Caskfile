@@ -1,7 +1,0 @@
-install caskroom/cask/brew-cask
-
-cask install firefox
-cask install alfred
-cask install google-chrome
-cask install iterm2
-cask install atom
