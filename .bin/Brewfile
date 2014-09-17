@@ -1,9 +1,0 @@
-install caskroom/cask/brew-cask
-
-# Git/repo stuff
-install tig
-
-# Databases
-install redis
-install memcached
-install elasticsearch
