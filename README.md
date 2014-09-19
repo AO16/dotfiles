@@ -3,7 +3,7 @@
 TODOs
 
 * iterm settings
-* atom settings
+* ~~atom settings~~
 * linking up apps that haven't been installed via cask
 * linking up apps that haven't been installed via brew
 * npm package.json
@@ -11,5 +11,5 @@ TODOs
 * automate installation of all packages into one shell script
 
 ```bash
-brew bundle Caskfile
+bash Caskfile.sh
 ```
