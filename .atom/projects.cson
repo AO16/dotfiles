@@ -1,0 +1,35 @@
+'wildcat':
+  'title': 'wildcat'
+  'paths': [
+    '/Users/Andrew/Zipscene/wildcat'
+  ]
+'presentation':
+  'title': 'presentation'
+  'paths': [
+    '/Users/Andrew/Zipscene/presentation'
+  ]
+'ember-cli-app':
+  'title': 'ember-cli-app'
+  'paths': [
+    '/Users/Andrew/Zipscene/ember-cli-app'
+  ]
+'clientdashboard':
+  'title': 'clientdashboard'
+  'paths': [
+    '/Users/Andrew/Zipscene/clientdashboard'
+  ]
+'zs-api':
+  'title': 'zs-api'
+  'paths': [
+    '/Users/Andrew/Zipscene/zs-api'
+  ]
+'ao16.github.io':
+  'title': 'ao16.github.io'
+  'paths': [
+    '/Users/Andrew/Sites/ao16.github.io'
+  ]
+'dotfiles':
+  'title': 'dotfiles'
+  'paths': [
+    '/Users/Andrew/dotfiles'
+  ]
