@@ -33,3 +33,8 @@
   'paths': [
     '/Users/Andrew/dotfiles'
   ]
+'zs-api-data':
+  'title': 'zs-api-data'
+  'paths': [
+    '/Users/Andrew/Zipscene/sandbox/zs-api-data'
+  ]
