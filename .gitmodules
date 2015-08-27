@@ -1,0 +1,3 @@
+[submodule ".src/reslate"]
+	path = .src/reslate
+	url = https://github.com/lunixbochs/reslate.git
