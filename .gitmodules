@@ -1,3 +1,12 @@
 [submodule ".src/reslate"]
 	path = .src/reslate
 	url = https://github.com/lunixbochs/reslate.git
+[submodule "spacemacs/nyan-mode"]
+	path = spacemacs/nyan-mode
+	url = https://github.com/TeMPOraL/nyan-mode.git
+[submodule "themes/emacs/emacs-flatui-theme"]
+	path = themes/emacs/emacs-flatui-theme
+	url = https://github.com/MetroWind/emacs-flatui-theme.git
+[submodule ".src/tmux-powerline"]
+	path = .src/tmux-powerline
+	url = https://github.com/erikw/tmux-powerline.git
