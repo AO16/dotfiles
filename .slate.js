@@ -6,7 +6,7 @@
  */
 
 // Source relsate.js from submodule
-S.src('.src/reslate/reslate.js');
+S.src('dotfiles/.src/reslate/reslate.js');
 
 // Enable to see debug messages in Console.app
 $.debug = true;
