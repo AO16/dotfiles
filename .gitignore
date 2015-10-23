@@ -1,5 +1,6 @@
-.zcompdump-Zipscene’s MacBook Pro-5.0.2
+.zcompdump-*
 .vagrant/
 .atom/compile-cache/
 .atom/packages/
 .atom/storage/
+.atom
