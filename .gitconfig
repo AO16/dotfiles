@@ -1,0 +1,30 @@
+[user]
+	name = Andy Orahoske
+	email = andrew.orahoske@zipscene.com
+[mergetool]
+	keepBackup = true
+[core]
+	excludesfile = /Users/Andrew/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[alias]
+	unadd = reset HEAD --
+	cleanup-local = !sh -c \"git branch --merged | grep -v \\\"\\\\*\\\" | xargs -n 1 git branch -d\"
+	nb = !git checkout -b $1 && git push -u origin
+	delete-local = branch -D
+	delete-remote = push origin -u 
+	out = push
+	in = pull
+	sync = "!sh -c \"git in; git out;\""
+	co = checkout
+	tags = tag -l --sort=v:refname
+	hold = "!sh -c \"git add .; git commit -m \"hold\";\""
+	unhold = reset HEAD~1 --soft 
+[push]
+	default = current
+[merge]
+	tool = opendiff
