@@ -1,3 +1,6 @@
 [submodule ".src/reslate"]
 	path = .src/reslate
 	url = https://github.com/lunixbochs/reslate.git
+[submodule ".src/tmux-powerline"]
+	path = .src/tmux-powerline
+	url = https://github.com/erikw/tmux-powerline.git
