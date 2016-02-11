@@ -176,7 +176,24 @@ layers configuration."
     "wj" 'split-window-below-and-focus
     "wk" 'split-window-below
     "wl" 'split-window-right-and-focus)
-)
+
+  (defun paste-from-clipboard ()
+    (interactive)
+    (setq x-select-enable-clipboard t)
+    (yank)
+    (setq x-select-enable-clipboard nil))
+
+  (defun copy-to-clipboard()
+    (interactive)
+    (setq x-select-enable-clipboard t)
+    (kill-ring-save (region-beginning) (region-end))
+    (setq x-select-enable-clipboard nil))
+
+  (evil-leader/set-key
+    "cby" 'copy-to-clipboard
+    "cbp" 'paste-from-clipboard)
+
+ )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
