@@ -22,8 +22,13 @@
 	sync = "!sh -c \"git in; git out;\""
 	co = checkout
 	tags = tag -l --sort=v:refname
-	hold = "!sh -c \"git add .; git commit -m \"hold\";\""
-	unhold = reset HEAD~1 --soft 
+
+# Stash helpers
+	sl = stash list
+	ss = stash save
+	sa = "!sh -c 'git stash apply stash@{$1}' -"
+	sp = "!sh -c 'git stash pop stash@{$1}' -"
+	sd = "!sh -c 'git stash drop stash@{$1}' -"
 [push]
 	default = current
 [merge]
