@@ -39,3 +39,6 @@ alias emacs="/usr/local/Cellar/emacs/24.5/bin/emacs"
 alias reload="exec $SHELL -l"
 
 alias creep-on-rob="ssh pairprog@192.168.178.79"
+
+export NVM_DIR="/usr/local/Cellar/nvm/0.29.0"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
