@@ -140,7 +140,7 @@ before layers configuration."
    ;; Transparency can be toggled through `toggle-transparency'.
    dotspacemacs-inactive-transparency 90
    ;; If non nil unicode symbols are displayed in the mode line.
-   dotspacemacs-mode-line-unicode-symbols t
+   dotspacemacs-mode-line-unicode-symbols nil 
    ;; If non nil smooth scrolling (native-scrolling) is enabled. Smooth
    ;; scrolling overrides the default behavior of Emacs which recenters the
    ;; point when it reaches the top or bottom of the screen.
@@ -168,6 +168,13 @@ before layers configuration."
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
   (global-linum-mode)
+
+  ;; Better window splitting
+  (evil-leader/set-key
+    "wh" 'split-window-right
+    "wj" 'split-window-below-and-focus
+    "wk" 'split-window-below
+    "wl" 'split-window-right-and-focus)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
