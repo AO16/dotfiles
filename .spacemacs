@@ -41,6 +41,7 @@
    ;; configuration in `dotspacemacs/config'.
    dotspacemacs-additional-packages '(editorconfig
                                       slim-mode
+                                      simpleclip
                                       hexrgb)
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
@@ -177,21 +178,13 @@ layers configuration."
     "wk" 'split-window-below
     "wl" 'split-window-right-and-focus)
 
-  (defun paste-from-clipboard ()
-    (interactive)
-    (setq x-select-enable-clipboard t)
-    (yank)
-    (setq x-select-enable-clipboard nil))
+  (simpleclip-mode 1)
 
-  (defun copy-to-clipboard()
-    (interactive)
-    (setq x-select-enable-clipboard t)
-    (kill-ring-save (region-beginning) (region-end))
-    (setq x-select-enable-clipboard nil))
-
+  ;; copy and paste to clipboard that actually works
   (evil-leader/set-key
-    "cby" 'copy-to-clipboard
-    "cbp" 'paste-from-clipboard)
+    "cby" 'simpleclip-copy
+    "cbp" 'simpleclip-paste
+    )
 
  )
 
