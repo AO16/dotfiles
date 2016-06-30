@@ -27,11 +27,13 @@
      git
      markdown
      html
+     tmux
+     themes-megapack
      ;; org
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
-     ;; syntax-checking
+     syntax-checking
      version-control
      php
      )
@@ -75,7 +77,8 @@ before layers configuration."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(spacemacs-dark
+   dotspacemacs-themes '(misterioso
+                         spacemacs-dark
                          zenburn
                          solarized-light
                          spacemacs-dark
@@ -170,6 +173,8 @@ before layers configuration."
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
   (global-linum-mode)
+  (setq vc-follow-symlinks t)
+  (set-default 'truncate-lines t)
 
   ;; Better window splitting
   (evil-leader/set-key
@@ -183,9 +188,28 @@ layers configuration."
   ;; copy and paste to clipboard that actually works
   (evil-leader/set-key
     "cby" 'simpleclip-copy
-    "cbp" 'simpleclip-paste
-    )
+    "cbp" 'simpleclip-paste)
 
+  (editorconfig-mode t)
+  (setq js2-mode-show-parse-errors nil
+        js2-mode-show-strict-warnings nil)
+
+  ;; Multiple cursors
+  (bind-key "C-n" 'mc/mark-next-like-this evil-normal-state-map)
+  (bind-key "C-p" 'mc/unmark-next-like-this evil-normal-state-map)
+  (bind-key "C-c p" 'mc/mark-previous-like-this evil-normal-state-map)
+  (bind-key "C-c n" 'mc/unmark-previous-like-this evil-normal-state-map)
+  (bind-key "C-c C-n" 'mc/mark-all-like-this-dwim evil-normal-state-map)
+
+  (setq backup-directory-alist
+    `((".*" . ,temporary-file-directory)))
+  (setq auto-save-file-name-transforms
+    `((".*" ,temporary-file-directory t))) 
+
+  (use-package slim-mode
+    :mode ("\\.emblem\\'" . slim-mode)
+    :defer t
+    )
  )
 
 ;; Do not write anything past this comment. This is where Emacs will
