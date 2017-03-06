@@ -31,3 +31,10 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade --all
 
+brew install tig
+brew install git-extras
+brew install zsh
+brew install tmux
+brew install emacs
+brew install docker
+brew install nvm
