@@ -34,6 +34,7 @@ brew upgrade --all
 brew install tig
 brew install git-extras
 brew install zsh
+brew install zsh-completions
 brew install tmux
 brew install emacs
 brew install docker
