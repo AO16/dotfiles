@@ -1,0 +1,9 @@
+{
+  "com.apple.dock": {
+    "autohide": true,
+    "orientation": "right"
+  },
+  "AppleMultitouchTrackpad": {
+    "TrackpadThreeFingerDrag": true
+  }
+}

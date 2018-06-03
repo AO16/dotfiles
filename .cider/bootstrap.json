@@ -1,0 +1,23 @@
+{
+    "casks": [
+        "1password",
+        "alfred",
+        "dash",
+        "google-chrome",
+        "spotify"
+    ],
+    "formulas": [
+        "git-extras",
+        "readline",
+        "tig",
+        "tmux",
+        "zsh"
+    ],
+    "symlinks": {
+        "git/.*": "~"
+    },
+    "taps": [
+        "homebrew/cask",
+        "homebrew/core"
+    ]
+}

@@ -1,0 +1,11 @@
+[user]
+	name = Andy Orahoske
+	email = orahoske.2@gmail.com
+[alias]
+	sl = stash list
+	ss = stash save
+	sa = "!sh -c 'git stash apply stash@{$1}' -"
+	sp = "!sh -c 'git stash pop stash@{$1}' -"
+	sd = "!sh -c 'git stash drop stash@{$1}' -"
+[push]
+	default = current
