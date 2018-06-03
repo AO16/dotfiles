@@ -1,6 +1,7 @@
 {
     "after-scripts": [
         "../scripts/dock.sh",
+        "../scripts/iterm.sh",
         "../scripts/spacemacs.sh",
         "../scripts/zsh.sh"
     ],
