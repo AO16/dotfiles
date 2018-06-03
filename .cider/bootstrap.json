@@ -14,7 +14,8 @@
         "zsh"
     ],
     "symlinks": {
-        "git/.*": "~"
+        "git/.*": "~",
+        "karabiner/*": "~/.config/karabiner/"
     },
     "taps": [
         "homebrew/cask",
