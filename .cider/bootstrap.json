@@ -1,4 +1,7 @@
 {
+    "after-scripts": [
+        "../scripts/zsh.sh"
+    ],
     "casks": [
         "1password",
         "alfred",
@@ -18,7 +21,8 @@
     ],
     "symlinks": {
         "git/.*": "~",
-        "karabiner/*": "~/.config/karabiner/"
+        "karabiner/*": "~/.config/karabiner/",
+        "zsh/.*": "~"
     },
     "taps": [
         "homebrew/cask",
