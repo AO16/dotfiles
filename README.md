@@ -3,6 +3,7 @@
 Manual setup:
 
 - Set resolution to scaled and more space
+- Add dropbox, spectacle and alfred as startup apps
 
 Todo:
 
