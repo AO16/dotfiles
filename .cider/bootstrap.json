@@ -6,6 +6,7 @@
         "1password",
         "alfred",
         "dash",
+        "font-meslo-for-powerline",
         "google-chrome",
         "iterm2",
         "karabiner-elements",
@@ -13,7 +14,15 @@
         "spotify"
     ],
     "formulas": [
+        "emacs",
         "git-extras",
+        "gmp",
+        "gnutls",
+        "libffi",
+        "libtasn1",
+        "libunistring",
+        "nettle",
+        "p11-kit",
         "readline",
         "tig",
         "tmux",
