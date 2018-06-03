@@ -36,6 +36,7 @@
         "git/.*": "~",
         "karabiner/*": "~/.config/karabiner/",
         "spacemacs/.*": "~",
+        "tmux/.*": "~",
         "zsh/.*": "~"
     },
     "taps": [

@@ -1,3 +1,4 @@
+
 ;; -*- mode: emacs-lisp -*-
 ;; This file is loaded by Spacemacs at startup.
 ;; It must be stored in your home directory.
@@ -40,6 +41,7 @@ values."
      ;; auto-completion
      ;; better-defaults
      emacs-lisp
+     tmux
      ;; git
      ;; markdown
      ;; org
@@ -299,6 +301,8 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
+    (setq base16-theme-use-shell-colors t)
+    (setq base16-theme-256-color-source "base16-shell")
   )
 
 (defun dotspacemacs/user-config ()
@@ -308,8 +312,6 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
-    (setq base16-theme-use-shell-colors t)
-    (setq base16-theme-256-color-source "base16-shell")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
