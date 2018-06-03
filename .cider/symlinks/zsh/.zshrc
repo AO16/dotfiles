@@ -22,7 +22,6 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 # Alias
 alias emacs="/usr/local/Cellar/emacs/26.1_1/bin/emacs -nw"
 
-
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
@@ -73,11 +72,11 @@ alias emacs="/usr/local/Cellar/emacs/26.1_1/bin/emacs -nw"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  brew,
-  git,
-  git-extras,
-  tig,
-  tmux,
+  brew
+  git
+  git-extras
+  tig
+  tmux
   yarn
 )
 
