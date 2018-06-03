@@ -1,5 +1,6 @@
 {
     "after-scripts": [
+        "../scripts/dock.sh",
         "../scripts/spacemacs.sh",
         "../scripts/zsh.sh"
     ],
@@ -15,6 +16,7 @@
         "spotify"
     ],
     "formulas": [
+        "dockutil",
         "emacs",
         "git-extras",
         "gmp",
