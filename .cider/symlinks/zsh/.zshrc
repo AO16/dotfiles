@@ -61,7 +61,12 @@ DEFAULT_USER=`whoami`
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+  brew,
+  git,
+  git-extras,
+  tig,
+  tmux,
+  yarn
 )
 
 source $ZSH/oh-my-zsh.sh
