@@ -34,6 +34,7 @@
     "symlinks": {
         "git/.*": "~",
         "karabiner/*": "~/.config/karabiner/",
+        "spacemacs/.*": "~",
         "zsh/.*": "~"
     },
     "taps": [
