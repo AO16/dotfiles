@@ -3,6 +3,7 @@
         "../scripts/dock.sh",
         "../scripts/iterm.sh",
         "../scripts/nvm.sh",
+        "../scripts/npm.sh",
         "../scripts/spacemacs.sh",
         "../scripts/zsh.sh"
     ],
